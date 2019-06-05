@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>GPA Calculator Port</title>
+  
+  
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poiret+One|Raleway:400,300,600,700'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+     <body>
+    <h1>GPA Auto Calculator</h1>
+		<h2>PDF Port</h2>
+    <h3>Instructions</h3>
+    <p class="desc">View your transcript on <a href="https://uwaterloo.ca/quest/">Quest</a> by going to <code>My Academics -> unofficial transcript</code> then select <code>Unofficial Undergraduate</code> as the report type and hit the <code>go</code> button.<br>
+			Once your transcript has loaded then upload the PDF here.
+		<span class="disclaimer">The parser runs completely on your browser, absolutely no data is stored remotely.</aside>
+		</p>
+			
+		 <h3>Settings</h3>
+		<div class="options">
+			<!-- TODO: Enable Drag-n-Drop -->
+    <div class="dropZone">
+	<input type="file" id="transcript-data" />
+	<label for="transcript-data" id="info"><i class="material-icons">file_upload</i> Upload Unofficial Transcript PDF</label>
+</div>
+    <button id="calculate-button" type="button">Calculate</button>
+		</div>
+		<h3>Results</h3>
+    <div id="result"></div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.489/pdf.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
